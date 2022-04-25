@@ -409,7 +409,12 @@ a {
         padding-bottom: 0;
     }
 
+    .main {
+        background-color: black;
+    }
+
     .flex-container {
+        background-color: black;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -433,7 +438,8 @@ a {
 
     .flex-container .right img {
         height: 370px;
-        margin: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         padding-right: 2rem;
     }
 

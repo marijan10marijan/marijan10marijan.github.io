@@ -1,0 +1,463 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 1.2rem;
+}
+
+.logo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo span {
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: .8rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    opacity: .8;
+}
+
+.navbar .home {
+    color: orangered;
+}
+
+.navbar .home:hover {
+    opacity: .8;
+}
+
+.flex-3 {
+    padding-bottom: 1.5rem;
+}
+
+.flex-3 a {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: .8rem;
+}
+
+.flex-3 a:hover {
+    opacity: .8;
+}
+
+.flex-3 .btn,
+.flex-container .btn {
+    background-color: orangered;
+    color: white;
+    padding: .7rem;
+    border-radius: .3rem;
+    margin-left: 0;
+}
+
+.main {
+    background-color: black;
+}
+
+.flex-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.flex-container .left {
+    padding: 3rem 1rem 4rem 1rem;
+}
+
+.flex-container h1 {
+    margin-bottom: .8rem;
+}
+
+.flex-container p {
+    margin-bottom: 1.5rem;
+}
+
+.flex-container i {
+    background-color: white;
+    color: orangered;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    padding-left: .3rem;
+    padding-top: .2rem;
+}
+
+.flex-container .right {
+    width: 100%;
+}
+
+.flex-container .right img {
+    width: 100% !important;
+    height: 22rem;
+    object-fit: cover;
+}
+
+/* SECTION */
+
+.section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-div {
+    margin: 3.5rem 1rem;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.full-div h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.full-div p {
+    color: grey;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+
+/* SECTION2 */
+
+.section2 {
+    background-color: white;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.services {
+    max-width: 800px;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.services p {
+    color: grey;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.services-boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    background-color: rgb(238, 234, 234);
+    margin-bottom: 1.2rem;
+}
+
+.box1 {
+    background-color: orangered;
+    color: white;
+}
+
+.box1 p {
+    color: white !important;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+}
+
+.box p {
+    color: gray;
+    padding-left: 1rem;
+    padding-bottom: 1.2rem;
+}
+
+/* FOOTER */
+
+.footer {
+    max-width: 100%;
+    width: 100%;
+    background-color: black;
+    margin-top: 1.5rem;
+}
+
+.box-flex {
+    margin: auto;
+    padding: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-flex-left p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: .6rem;
+}
+
+.box-flex-left a {
+    color: white;
+    text-decoration: none;
+}
+
+.box-flex-left a:hover {
+    color: orangered;
+}
+
+.box-flex-right a {
+    color: white;
+    font-size: 1.6rem;
+    margin-right: .8rem;
+}
+
+.box-flex-right a:hover {
+    color: white;
+    opacity: .7;
+}
+
+
+@media (min-width:500px) {
+    .flex-container .right {
+        width: 90%;
+    }
+
+    .flex-container .left {
+        width: 90%;
+    }
+
+    .flex-container .right img {
+        height: 25rem;
+    }
+
+    .full-div {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .flex-container .left h1 {
+        font-size: 2.2rem;
+    }
+
+    .services-boxes {
+        width: 70%;
+        margin: auto;
+    }
+
+    .box {
+        border-radius: 15px;
+    }
+
+    .box-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+@media (min-width:700px) {
+    .navbar li {
+        margin-right: 1.2rem;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        margin-top: 1.7rem;
+    }
+
+    .flex-3 {
+        margin-top: 1.7rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-container .left {
+        width: 85%;
+        margin-left: 1.5rem;
+    }
+
+    .flex-container .left h1 {
+        font-size: 2.5rem;
+    }
+
+    .flex-container .right {
+        width: 80%;
+    }
+
+    .flex-container .right img {
+        width: 100%;
+        height: 27rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .services {
+        width: 55%;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .services-boxes {
+        width: 50%;
+        margin: auto;
+    }
+
+    .box {
+        padding: .8rem;
+        border-radius: 15px;
+    }
+
+    .box-flex {
+        flex-direction: row;
+    }
+
+
+}
+
+@media (min-width:900px) {
+    .navbar li {
+        margin-right: 1.4rem;
+    }
+
+    .flex-3 {
+        flex-direction: row;
+    }
+
+    .flex-3 a {
+        margin-right: 1rem;
+        margin-top: .8rem;
+    }
+
+    .flex-3 .btn {
+        margin-top: 0;
+    }
+
+    .flex-3 {
+        padding-bottom: 0;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-container .left {
+        width: 75%;
+    }
+
+    .flex-container .left h1 {
+        font-size: 3.3rem;
+    }
+
+    .flex-container .left p {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .flex-container .right {
+        width: 60%;
+    }
+
+    .flex-container .right img {
+        height: 370px;
+        margin: 2rem;
+        padding-right: 2rem;
+    }
+
+    .services {
+        width: 40%;
+    }
+
+    .services-boxes {
+        width: 100%;
+        flex-direction: row;
+        gap: 1.2rem;
+        padding: 1rem;
+    }
+
+    .box {
+        padding: 2rem;
+        border-radius: 10px;
+    }
+
+    .box-flex {
+        flex-direction: row;
+    }
+
+    .footer {
+        margin-top: 2rem;
+    }
+}

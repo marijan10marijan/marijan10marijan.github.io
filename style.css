@@ -137,6 +137,7 @@ a {
 
 .flex-container .right {
     width: 100%;
+    background-color: black;
 }
 
 .flex-container .right img {
